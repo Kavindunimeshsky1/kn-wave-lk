@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — KN Wave.lk</title><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#050B16">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="top"><div class="wrap"><a class="logo" href="index.html">KN Wave<b>.lk</b></a><h1 style="font-size:1.1rem;margin:0" data-i18n="a.title"></h1>
+<div class="langs" role="group" aria-label="Language"><button type="button" data-lang="en">English</button><button type="button" data-lang="si">සිංහල</button><button type="button" data-lang="ta">தமிழ்</button></div></div></header>
+<main class="wrap" style="padding:1.5rem 1rem"><p id="flash" class="msg" role="status"></p>
+<form id="login" class="card" hidden style="max-width:420px"><label for="em" data-i18n="a.email"></label><input id="em" type="email" autocomplete="username" required>
+<label for="pw" data-i18n="a.password"></label><input id="pw" type="password" autocomplete="current-password" required><p><button class="btn" data-i18n="a.signin"></button></p></form>
+<div id="panel" hidden><button id="out" class="btn alt" data-i18n="a.signout"></button>
+<div class="tabs" role="tablist"><button class="btn alt" role="tab" aria-selected="true" data-p="ov" data-i18n="a.overview"></button><button class="btn alt" role="tab" aria-selected="false" data-p="rv" data-i18n="a.reviews"></button><button class="btn alt" role="tab" aria-selected="false" data-p="sv" data-i18n="a.services"></button></div>
+<div id="p-ov" class="grid"></div>
+<div id="p-rv" hidden><div class="row">
+<div><label for="fst" data-i18n="a.status"></label><select id="fst"><option value="">—</option><option value="pending">pending</option><option value="approved">approved</option><option value="rejected">rejected</option></select></div>
+<div><label for="fs" data-i18n="filt.service"></label><select id="fs"></select></div><div><label for="fr" data-i18n="filt.rating"></label><select id="fr"></select></div>
+<div><label for="fe">😊</label><select id="fe"></select></div><div><label for="fd" data-i18n="a.from"></label><input id="fd" type="date"></div>
+<div><label for="fq" data-i18n="a.search"></label><input id="fq"></div></div><div id="rl"></div><button id="rm" class="btn alt" hidden data-i18n="more"></button></div>
+<div id="p-sv" hidden><div id="sl" class="grid"></div><form id="af" class="card" style="margin-top:1rem"><h3 data-i18n="a.add"></h3>
+<label>ID<input name="i" pattern="[a-z0-9-]+" required></label><label><span data-i18n="a.sname"></span><input name="n" required></label><label><span data-i18n="a.sdesc"></span><textarea name="d" required></textarea></label><label><span data-i18n="a.sprice"></span><input name="p" required></label><p><button class="btn" data-i18n="a.save"></button></p></form></div>
+</div></main><script type="module" src="js/admin.js"></script></body></html>

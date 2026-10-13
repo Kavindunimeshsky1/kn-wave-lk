@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KN Wave.lk — Your Sound. Your Wave.</title>
+<meta name="description" content="KN Wave.lk: audio editing, dancing tracks, vocal removal, drum removal, karaoke tracks and audio enhancement in Sri Lanka.">
+<meta name="theme-color" content="#050B16">
+<meta property="og:title" content="KN Wave.lk — Your Sound. Your Wave."><meta property="og:description" content="Professional audio services in Sri Lanka."><meta property="og:type" content="website">
+<link rel="canonical" href="https://YOUR-DOMAIN-HERE/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="top"><div class="wrap">
+ <a class="logo" href="#home" aria-label="KN Wave.lk"><svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true"><g stroke="#00C8FF" stroke-width="6" stroke-linecap="round"><path d="M10 32v0M20 24v16M30 12v40M40 22v20M50 18v28M58 30v4"/></g></svg>KN Wave<b>.lk</b></a>
+ <nav data-i18n-aria="nav.label" aria-label="Main navigation"><ul>
+  <li><a href="#home" data-i18n="nav.home">Home</a></li><li><a href="#services" data-i18n="nav.services">Services</a></li>
+  <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li><li><a href="#how" data-i18n="nav.how">How to Order</a></li>
+  <li><a href="#contact" data-i18n="nav.contact">Contact</a></li><li><a href="#about" data-i18n="nav.about">About</a></li>
+  <li><a href="#privacy" data-i18n="nav.privacy">Privacy &amp; Terms</a></li></ul></nav>
+ <div class="langs" role="group" data-i18n-aria="lang.label" aria-label="Language">
+  <button type="button" data-lang="en" lang="en">English</button><button type="button" data-lang="si" lang="si">සිංහල</button><button type="button" data-lang="ta" lang="ta">தமிழ்</button></div>
+</div></header>
+<main id="main">
+<section id="home" class="hero"><div class="wrap">
+ <h1 data-i18n="hero.title">Your Sound. Your Wave.</h1>
+ <p data-i18n="hero.intro"></p>
+ <div class="eq" aria-hidden="true"></div>
+ <div class="row"><a class="btn" href="#services" data-i18n="cta.explore">Explore Services</a>
+  <a class="btn alt" id="waGeneral" target="_blank" rel="noopener noreferrer" data-i18n="cta.wa">Contact on WhatsApp</a></div>
+ <p id="heroRating" class="small"></p>
+</div></section>
+<section id="services" class="alt-bg"><div class="wrap"><h2 data-i18n="svc.title">Services &amp; Pricing</h2>
+ <p class="muted" data-i18n="svc.note"></p><div id="svcList" class="grid" aria-live="polite"></div></div></section>
+<section id="reviews"><div class="wrap"><h2 data-i18n="rev.title">Customer Ratings &amp; Reviews</h2>
+ <div class="grid"><div class="card" id="summary" aria-live="polite"></div>
+ <form class="card" id="rf" novalidate>
+  <h3 data-i18n="f.title"></h3>
+  <label for="rfService" data-i18n="f.service"></label><select id="rfService" required></select><p class="fe" id="e-service"></p>
+  <fieldset><legend data-i18n="f.reaction"></legend><div class="choices" id="emos"></div></fieldset><p class="fe" id="e-emotion"></p>
+  <fieldset><legend data-i18n="f.rating"></legend><div class="choices stars" id="stars"></div><p class="muted small" data-i18n="f.scale"></p></fieldset><p class="fe" id="e-rating"></p>
+  <label for="rfComment" data-i18n="f.comment"></label><textarea id="rfComment" maxlength="1000" required></textarea><p class="fe" id="e-comment"></p>
+  <label for="rfName" data-i18n="f.name"></label><input id="rfName" maxlength="40" autocomplete="off"><p class="fe" id="e-name"></p>
+  <label for="rfLang" data-i18n="f.lang"></label><select id="rfLang"><option value="en">English</option><option value="si">සිංහල</option><option value="ta">தமிழ்</option></select>
+  <input class="hp" id="rfHp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <p class="muted small" data-i18n="f.note"></p>
+  <button class="btn" id="rfBtn" type="submit" data-i18n="f.submit"></button><p class="msg" id="rfMsg" role="status"></p>
+ </form></div>
+ <p class="muted small" data-i18n="rev.policy"></p>
+ <div class="row"><div><label for="fSvc" data-i18n="filt.service"></label><select id="fSvc"></select></div>
+  <div><label for="fRate" data-i18n="filt.rating"></label><select id="fRate"></select></div></div>
+ <div id="rvList" aria-live="polite"></div>
+ <button class="btn alt" id="rvMore" hidden data-i18n="more"></button>
+</div></section>
+<section id="how" class="alt-bg"><div class="wrap"><h2 data-i18n="how.title"></h2>
+ <ol><li data-i18n="how.1"></li><li data-i18n="how.2"></li><li data-i18n="how.3"></li></ol></div></section>
+<section id="contact"><div class="wrap"><h2 data-i18n="con.title"></h2><p data-i18n="con.text"></p>
+ <p><strong>WhatsApp: <a href="https://wa.me/94763204765" target="_blank" rel="noopener noreferrer">0763204765</a></strong></p>
+ <a class="btn" id="waContact" target="_blank" rel="noopener noreferrer" data-i18n="con.wa"></a></div></section>
+<section id="about" class="alt-bg"><div class="wrap"><h2 data-i18n="about.title"></h2><p data-i18n="about.text"></p></div></section>
+<section id="privacy"><div class="wrap"><h2 data-i18n="priv.title"></h2>
+ <p data-i18n="priv.1"></p><p data-i18n="priv.2"></p><p data-i18n="priv.3"></p></div></section>
+</main>
+<footer><div class="wrap"><span data-i18n="foot"></span></div></footer>
+<dialog id="dlg" aria-labelledby="dlgT"><h3 id="dlgT"></h3>
+ <label for="oMin" data-i18n="o.minutes"></label><input id="oMin" maxlength="60">
+ <label for="oDet" data-i18n="o.details"></label><textarea id="oDet" maxlength="500"></textarea>
+ <label for="oNot" data-i18n="o.notes"></label><input id="oNot" maxlength="300">
+ <p class="muted small" data-i18n="o.note"></p>
+ <div class="row"><a class="btn" id="oGo" target="_blank" rel="noopener noreferrer" data-i18n="o.open"></a>
+ <button class="btn alt" id="oClose" type="button" data-i18n="o.close"></button></div></dialog>
+<script type="module" src="js/app.js"></script>
+</body></html>
